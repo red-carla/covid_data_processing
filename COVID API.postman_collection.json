@@ -1,0 +1,657 @@
+{
+	"info": {
+		"_postman_id": "7daa93d5-3183-4a40-bec2-3e0f0bb9f64c",
+		"name": "COVID API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20275303"
+	},
+	"item": [
+		{
+			"name": "Death Records",
+			"item": [
+				{
+					"name": "GetDeathRecordById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/death/237",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"death",
+								"237"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAllDeathRecords",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/death/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"death",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateDeathRecordJson",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 300,\r\n    \"country_name\": \"New country JSON\",\r\n    \"cases\": 25050,\r\n    \"deaths\": 35000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/death/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"death",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateDeathRecordXML",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "<covid_death>\r\n    <id>310</id>\r\n    <country_name>new country xml</country_name>\r\n    <cases>45000</cases>\r\n    <deaths>35000</deaths>\r\n</covid_death>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/death/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"death",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteDeathRecordById",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/death/200",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"death",
+								"200"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateDeathRecordXML",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "<covid_death>\r\n<country_name>Updated Country XML</country_name>\r\n<cases>35000</cases>\r\n<deaths>40000</deaths>\r\n</covid_death>\r\n",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/death/310",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"death",
+								"310"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateDeathRecordJSON",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"country_name\": \"Updated JSON\",\r\n    \"cases\": 8000,\r\n    \"deaths\": 46000\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/death/300",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"death",
+								"300"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteAllDeathRecords",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/death/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"death",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "noauth"
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Health Records",
+			"item": [
+				{
+					"name": "GetHealthRecordById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/health/24",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"health",
+								"24"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAllHealthRecords",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/health/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"health",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateHealthRecordJson",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 300,\r\n    \"country_name\": \"New country JSON\",\r\n    \"health_expenditure\": 5.3456\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/health/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"health",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateHealthRecordXML",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "<health_expenditure>\r\n    <id>310</id>\r\n    <country_name>New country xml</country_name>\r\n    <health_expenditure>5.483045</health_expenditure>\r\n</health_expenditure>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/health/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"health",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteHealthRecordById",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/health/200",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"health",
+								"200"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateHealthRecordXML",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "<health_expenditure>\r\n    <country_name>Updated Country XML</country_name>\r\n    <health_expenditure>7.8000</health_expenditure>\r\n</health_expenditure>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/health/310",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"health",
+								"310"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateHealthRecordJSON",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"country_name\": \"Updated country JSON\",\r\n    \"health_expenditure\": 3.437890\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/health/300",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"health",
+								"300"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteAllHealthRecords",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/health/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"health",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Happiness Records",
+			"item": [
+				{
+					"name": "GetHappinessRecordById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/happiness/35",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"happiness",
+								"35"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAllHappinessRecords",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/happiness/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"happiness",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateHappinessRecordJson",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 300,\r\n    \"country_name\": \"New country JSON\",\r\n    \"happiness_rank\": \"200\",\r\n    \"happiness_score\": \"3.5\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/happiness/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"happiness",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateHappinessRecordXML",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "<world_happiness>\r\n    <id>310</id>\r\n    <country_name>New Country XML</country_name>\r\n    <happiness_rank>45</happiness_rank>\r\n    <happiness_score>3.5</happiness_score>\r\n</world_happiness>",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/happiness/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"happiness",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteHappinessRecordById",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/happiness/400",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"happiness",
+								"400"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateHappinessRecordXML",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "<world_happiness>\r\n<country_name>Updated Country XML</country_name>\r\n<happiness_rank>78</happiness_rank>\r\n<happiness_score>3.4</happiness_score>\r\n</world_happiness>\r\n",
+							"options": {
+								"raw": {
+									"language": "xml"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/happiness/310",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"happiness",
+								"310"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateHappinessRecordJSON",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"country_name\": \"Updated country JSON\",\r\n    \"happiness_rank\": 800,\r\n    \"happiness_score\": 4.6\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/happiness/300",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"happiness",
+								"300"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteAllHappinessRecords",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/happiness/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"happiness",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
