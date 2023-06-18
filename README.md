@@ -9,12 +9,12 @@ A simple REST API that performs CRUD operations on a dataset of JSON or XML data
 - Download and install the latest version of XAMPP
 - Run as administrator
 - Open phpmyadmin and create a database called covid_api_db
-- Import sql file from resources/covid_api_db.sql
+- Import sql file from covid_api_db.sql
 
-- Open in IDE
+
 - Navigate to covid_api directory in the terminal
 - run npm install
-- once installed run api with nodemon server.js
+- run nodemon server.js
 
 - Will start on localhost:3000
 
@@ -22,7 +22,7 @@ A simple REST API that performs CRUD operations on a dataset of JSON or XML data
 (Make sure API is running before starting the frontend)
 - cd into covid_react
 - run npm install
-- run npm start
+- run npm start (please start on a different port as asked in the terminal)
 
     
 ## Authors
