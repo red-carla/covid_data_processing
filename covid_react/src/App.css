@@ -1,0 +1,58 @@
+.App {
+    background: hsla(265, 53%, 45%, 0.5);
+    background: linear-gradient(
+            135deg,
+            hsla(265, 53%, 45%, 0.7) 0%,
+            hsla(24, 93%, 60%, 0.7) 100%
+    );
+    background: -moz-linear-gradient(
+            135deg,
+            hsla(265, 53%, 45%, 0.7) 0%,
+            hsla(24, 93%, 60%, 0.7) 100%
+    );
+    background: -webkit-linear-gradient(
+            135deg,
+            hsla(265, 53%, 45%, 0.7) 0%,
+            hsla(24, 93%, 60%, 0.7) 100%
+    );
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.container {
+    max-width: 1200px;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.card {
+    width: 1200px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.chart-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.documentation-link {
+    color: #fff;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.documentation-link a {
+    color: #fff;
+    text-decoration: none;
+}
