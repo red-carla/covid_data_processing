@@ -24,6 +24,8 @@ A simple REST API that performs CRUD operations on a dataset of JSON or XML data
 - run npm install
 - run npm start (please start on a different port as asked in the terminal)
 
+## Postman
+There is a postman collection of requests in the main directory that can simply be imported into postman for testing purposes if you want to use it
     
 ## Authors
 
