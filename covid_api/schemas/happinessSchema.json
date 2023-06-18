@@ -1,0 +1,47 @@
+
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": [
+    "id",
+    "country_name",
+    "happiness_rank",
+    "happiness_score"
+  ],
+  "properties": {
+    "id": {
+      "title": "Id",
+      "type": "integer",
+      "examples": [
+        500
+      ],
+      "default": 0
+    },
+    "country_name": {
+      "title": "Country_name",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "New country"
+      ],
+      "pattern": "^.*$"
+    },
+    "happiness_rank": {
+      "title": "Happiness_rank",
+      "type": "integer",
+      "examples": [
+        200
+      ],
+      "default": 0
+    },
+    "happiness_score": {
+      "title": "Happiness_score",
+      "type": "number",
+      "examples": [
+        3.5
+      ],
+      "default": 0.0
+    }
+  }
+}

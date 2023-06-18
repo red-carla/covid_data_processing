@@ -1,0 +1,12 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="covid_death">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="id" type="xs:integer"/>
+                <xs:element name="country_name" type="xs:string"/>
+                <xs:element name="cases" type="xs:integer"/>
+                <xs:element name="deaths" type="xs:integer"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

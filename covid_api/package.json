@@ -1,0 +1,24 @@
+{
+  "name": "covid_api",
+  "version": "2.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ajv": "^8.12.0",
+    "ajv-formats": "^2.1.1",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "express-xml-bodyparser": "^0.3.0",
+    "mysql": "^2.18.1",
+    "prettier": "^2.8.8",
+    "raw-body": "^2.5.2",
+    "swagger-ui-express": "^4.6.3",
+    "xsd-schema-validator": "^0.7.0"
+  }
+}

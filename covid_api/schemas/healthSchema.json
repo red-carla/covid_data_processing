@@ -1,0 +1,37 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": [
+    "id",
+    "country_name",
+    "health_expenditure"
+  ],
+  "properties": {
+    "id": {
+      "title": "Id",
+      "type": "integer",
+      "examples": [
+        50
+      ],
+      "default": 0
+    },
+    "country_name": {
+      "title": "Country_name",
+      "type": "string",
+      "default": "",
+      "examples": [
+        "New country"
+      ],
+      "pattern": "^.*$"
+    },
+    "health_expenditure": {
+      "title": "Health_expenditure",
+      "type": "number",
+      "examples": [
+        8.765
+      ],
+      "default": 0.0
+    }
+  }
+}
